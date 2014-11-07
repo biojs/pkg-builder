@@ -3,10 +3,10 @@ function showOptions(opts){
   this.el = opts.el;
   var self = this;
 
-  this.browserify = "http://b.biojs.net";
-  this.browserify = 'http://localhost:8090';
+  this.browserify = "https://b.biojs.net";
+  //this.browserify = 'http://localhost:8090';
 
-  $.get("http://workmen.biojs.net/all?short=1", function(pkgs){
+  $.get("https://workmen.biojs.net/all?short=1", function(pkgs){
     self.pkgs = pkgs;
 
     pkgs.forEach(function(el,index){
